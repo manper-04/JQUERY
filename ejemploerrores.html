@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Documento Nuevo</title>
+</head>
+<body>
+
+    <script src="js/jquery.min.js"></script>
+   
+    <script>
+    $.when($.ready, $.getScript("index.js")).then(function(){
+        console.log("Paso"); 
+    }).catch(function(){
+        console.log("No Paso");  
+    });
+    
+    
+    
+    </script>   
+   
+   
+   
+</body>
+</html>

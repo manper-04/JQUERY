@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Documento Nuevo</title>
+</head>
+<body>
+   
+   <script src="js/jquery.min.js"></script>
+   <script>
+    
+       //PRIMERA FORMA         <------ MAS RECOMENDADA
+       
+        //$(function(){
+        // alert("Hola mundo"); 
+        //});
+       
+       //SEGUNDA FORMA
+       
+        //$().ready(function(){
+           //alert("Hola mundo 2") 
+        //});
+       
+       //TERCERA FORMA
+       
+        //$(document).ready(function(){
+          //  alert("Hola mundo 3")
+            
+        //});
+       
+       //CUARTA FORMA
+       
+        $('h1').ready(function(){
+           alert("Hola mundo 4"); 
+        });
+    </script>
+   
+   
+   
+</body>
+</html>

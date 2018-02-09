@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Documento Nuevo</title>
+</head>
+<body>
+  
+    <h1 class="saludo">Hola codigo facilito</h1>
+    <p id="parrafo">Saludos a todos</p>
+    <div>:D</div>
+
+<script src="js/jquery.min.js"></script>
+<script>
+$(function(){
+    //Clases CSS hasClass addClass removeClass
+    $('.saludo').css({'background-color':'blue','text-align':'center'});
+    
+    if($('#parrafo').hasClass('saludo')){
+        alert('Si tiene la clase saludo');
+        $('#parrafo').removeClass('saludo');
+    }
+    else{
+        alert("No tiene la clase saludo");
+        $('div').addClass('hola');
+    }
+});    
+    
+</script>
+   
+   
+   
+   
+</body>
+</html>
+
+
